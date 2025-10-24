@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class AleatoriosPar {
     static void main() {
+        Random rng = new Random();
         Scanner scanner = new Scanner(System.in);
         int limite = 0;
         while (true) {
@@ -19,16 +20,16 @@ public class AleatoriosPar {
             }
         }
         AleatoriosPar aleatoriosPar = new AleatoriosPar();
-        System.out.println(aleatoriosPar.parAleatorioMenorQue(limite,null));
+        System.out.println(aleatoriosPar.parAleatorioMenorQue(limite,rng));
     }
 
     public int parAleatorioMenorQue(int limite, Random rng) {
         int numero = 0;
-        while (numero % 2 == 1) {
-
+        while (true) {
             numero = rng.nextInt(0, limite);
-
-
+            if (numero %2 == 0){
+                break;
+            }
         }
         return numero;
 
