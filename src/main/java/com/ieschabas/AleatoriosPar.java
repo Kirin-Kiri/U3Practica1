@@ -18,11 +18,19 @@ public class AleatoriosPar {
                 System.out.println("El límite no puede ser un número negativo");
             }
         }
+        AleatoriosPar aleatoriosPar = new AleatoriosPar();
+        System.out.println(aleatoriosPar.parAleatorioMenorQue(limite,null));
     }
 
     public int parAleatorioMenorQue(int limite, Random rng) {
-        return 4;
+        int numero = 0;
+        while (numero % 2 == 1) {
+
+            numero = rng.nextInt(0, limite);
+
+
+        }
+        return numero;
 
     }
-
 }
