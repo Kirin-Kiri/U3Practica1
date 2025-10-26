@@ -2,6 +2,10 @@ package com.ieschabas;
 
 public class NumerosImpares {
 
+    static void main() {
+        System.out.println(productoDiezPrimerosImpares());
+    }
+
     public NumerosImpares() {
     }
 
