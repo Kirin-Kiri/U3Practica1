@@ -66,6 +66,9 @@ public class MayoresAleatorios4 {
      */
     public int[] generarMaximos4(int repeticiones, Random rng) {
         int[] resultado = new int[repeticiones];
+        if (rng == null) {
+            throw new IllegalArgumentException();
+        }
         for (int i = 0; i < repeticiones; i++) {
             resultado[i] = max4(rng.nextInt(0, 1001), rng.nextInt(0, 1001), rng.nextInt(0, 1001), rng.nextInt(0, 1001));
         }

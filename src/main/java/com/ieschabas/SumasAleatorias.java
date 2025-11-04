@@ -55,6 +55,9 @@ public class SumasAleatorias {
      */
     public int sumaDosAleatorios(Random rng) {
         int numero = 0;
+        if (rng == null) {
+            throw new IllegalArgumentException();
+        }
         for (int i = 0; i <= 1; i++) { //Bucle para dos veces
             numero += rng.nextInt(0, 1001); //El numero generado se suma a la variable numero
         }
@@ -71,6 +74,9 @@ public class SumasAleatorias {
      */
     public int[] generarSumas(int repeticiones, Random rng) {
         int[] resultado = new int[repeticiones]; //Se crea array de longitud de repeticiones
+        if (rng == null) {
+            throw new IllegalArgumentException();
+        }
         for (int i = 0; i < repeticiones; i++) { //Bucle a la longitud de array
             resultado[i] = sumaDosAleatorios(rng); //Elemento de array contiene dos numeros generados y sumados por metodo sumaDosAleatorios
         }

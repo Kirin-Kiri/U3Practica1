@@ -65,6 +65,9 @@ public class MayoresAleatorios3 {
      */
     public int[] generarMaximos3(int repeticiones, Random rng) {
         int[] resultado = new int[repeticiones]; //Array a la longitud de repeticiones
+        if (rng == null) {
+            throw new IllegalArgumentException();
+        }
         for (int i = 0; i < repeticiones; i++) { //Bucle para rellenar array
             resultado[i] = max3(rng.nextInt(0, 1001), rng.nextInt(0, 1001), rng.nextInt(0, 1001));
         }

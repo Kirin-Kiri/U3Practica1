@@ -45,7 +45,7 @@ public class MenuVehiculos {
             System.out.println("4. Finalizar");
 
             opcion = scanner.nextInt(); //Escaneamos opcion
-            menuVehiculos.seleccionarOpcion(opcion); //Pasamos a otro metodo con opcion en argumento
+            System.out.println(menuVehiculos.seleccionarOpcion(opcion)); //Pasamos a otro metodo con opcion en argumento
         }
         scanner.close();
     }
@@ -85,19 +85,15 @@ public class MenuVehiculos {
     public String seleccionarOpcion(int opcion) {
         switch (opcion) {
             case 1:
-                System.out.println("Menu de mantenimiento de clientes");
-                break;
+                return "Mantenimiento de clientes";
             case 2:
-                System.out.println("Menu de introducción de facturas");
-                break;
+                return "Introducción de facturas";
             case 3:
-                System.out.println("Menu de listado de facturas");
-                break;
+                return "Listado de facturas";
             case 4:
-                System.out.println("Finalizacion del programa");
-                setBucle(false);
-                break;
+                return  "Finalizar";
+            default:
+                return "La opción no existe. Vuelve a intentarlo";
         }
-        return null;
     }
 }
