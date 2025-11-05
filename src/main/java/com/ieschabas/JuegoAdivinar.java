@@ -75,6 +75,7 @@ public class JuegoAdivinar {
             }
             contador++;
         }
+        scanner.close();
     }
 
     /**
