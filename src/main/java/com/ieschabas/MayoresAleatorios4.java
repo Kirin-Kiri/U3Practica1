@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Diseña un algoritmo que devuelva el mayor de cuatro números aleatorios (entre 0 y 1000), repetirlo 20 veces.
  *
  * @author Oleksiy
- * @version 1.0
+ * @version 1.1
  */
 
 public class MayoresAleatorios4 {

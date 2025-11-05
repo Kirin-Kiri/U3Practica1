@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Realiza un menú para una aplicación de mantenimiento de vehículos.
  *
  * @author Oleksiy
- * @version 1.0
+ * @version 1.1
  */
 
 public class MenuVehiculos {
